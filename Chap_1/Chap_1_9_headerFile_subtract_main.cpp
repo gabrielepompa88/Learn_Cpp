@@ -1,6 +1,7 @@
 /*
 
-Since Chap_1_9_headerFile_subtract.h is in the headers sub-directory, this .cpp file should be compiled with the g++ flag: "-I ./headers"
+Since Chap_1_9_headerFile_subtract.h is in the headers sub-directory, this .cpp file should be compiled with the g++ flag: "-I ./headers.
+Furthermore, since function subtract() is defined in the Chap_1_9_multipleFiles_subtract.cpp in the sub-directory functions, it should be compiled using ./functions/Chap_1_9_multipleFiles_subtract.cpp"
  */
 
 #include <iostream>

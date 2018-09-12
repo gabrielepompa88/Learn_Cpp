@@ -1,6 +1,6 @@
 /*
  
- To compile: g++ -o Q2_main Q2_main.cpp Q2_io.cpp
+ To compile: g++ -o Q2 Q2_main.cpp io.cpp
  
 */
 

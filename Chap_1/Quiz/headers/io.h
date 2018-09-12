@@ -1,9 +1,7 @@
-//
-//  io.h
-//  
-//
-//  Created by Gabriele Pompa on 12/09/18.
-//
-//
+# ifndef IO_H
+# define IO_H
 
-#include <stdio.h>
+int readNumber();
+void writeAnswer(int n);
+
+# endif

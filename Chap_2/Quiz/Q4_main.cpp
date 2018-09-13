@@ -1,6 +1,8 @@
 /*
 
  g++ -Wall -Wextra -Wpedantic -std=c++11 -o Q4 -I ./headers Q4_main.cpp
+ 
+ Uses the while loop to print until the ball effectively hits the ground.
 
 */
 

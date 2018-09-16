@@ -1,3 +1,9 @@
+/*
+
+    g++ -Wall -Wextra -Wpedantic -std=c++11 -o stringExample stringExample.cpp 
+ 
+*/
+
 #include <string>
 #include <iostream>
 

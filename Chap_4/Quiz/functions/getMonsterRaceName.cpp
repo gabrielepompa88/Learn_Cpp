@@ -16,5 +16,7 @@ std::string getMonsterRaceName(monsterRace race){
             return std::string("Giant Spider");
         case monsterRace::SLIME:
             return std::string("Slime");
+        default:
+            return "???";
     }
 }

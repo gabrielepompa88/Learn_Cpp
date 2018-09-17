@@ -27,9 +27,9 @@ int getMonsterId();
 int main()
 {
 
-    Monster ogre = {monsterRace::Ogre, "Torg", 145, getMonsterId()};
-    Monster slime = {monsterRace::Slime, "Blurp", 23, getMonsterId()};
-    Monster aracne = {monsterRace::GiantSpider, "BlackWidow", 66, getMonsterId()};
+    Monster ogre = {monsterRace::OGRE, "Torg", 145, getMonsterId()};
+    Monster slime = {monsterRace::SLIME, "Blurp", 23, getMonsterId()};
+    Monster aracne = {monsterRace::GIANT_SPIDER, "BlackWidow", 66, getMonsterId()};
     
     printMonster(ogre);
     printMonster(slime);

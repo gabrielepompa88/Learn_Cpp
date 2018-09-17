@@ -6,15 +6,15 @@
 std::string getMonsterRaceName(monsterRace race){
     
     switch(race){
-        case monsterRace::Ogre:
+        case monsterRace::OGRE:
             return std::string("Ogre");
-        case monsterRace::Dragon:
+        case monsterRace::DRAGON:
             return std::string("Dragon");
-        case monsterRace::Orc:
+        case monsterRace::ORC:
             return std::string("Orc");
-        case monsterRace::GiantSpider:
+        case monsterRace::GIANT_SPIDER:
             return std::string("Giant Spider");
-        case monsterRace::Slime:
+        case monsterRace::SLIME:
             return std::string("Slime");
     }
 }

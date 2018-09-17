@@ -3,11 +3,11 @@
 
 enum class monsterRace{
 
-    Ogre,
-    Dragon,
-    Orc,
-    GiantSpider,
-    Slime
+    OGRE,
+    DRAGON,
+    ORC,
+    GIANT_SPIDER,
+    SLIME
 };
 
 #endif

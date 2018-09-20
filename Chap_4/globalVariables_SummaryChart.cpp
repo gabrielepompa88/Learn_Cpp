@@ -1,6 +1,6 @@
 // Uninitialized definition:
 int g_x;        // defines uninitialized global variable (external linkage, default since non-const)
-static int g_x; // defines uninitialized static global variable (internal linkage)
+static int g_x; // defines uninitialized static global variable (internal linkage, enforced by the static)
 const int g_x;  // not allowed: const variables must be initialized
 
 // Forward declaration via extern keyword:
@@ -9,7 +9,7 @@ extern const int g_z; // forward declaration for const global variable defined e
 
 // Initialized definition:
 int g_y(1);        // defines initialized global variable (external linkage, default since non-const)
-static int g_y(1); // defines initialized static global variable (internal linkage)
+static int g_y(1); // defines initialized static global variable (internal linkage, enforced by the static)
 const int g_y(1);  // defines initialized const (thus, static) global variable (internal linkage, default because const)
 
 // Initialized definition w/extern keyword:

@@ -3,13 +3,13 @@
 #include <iostream>
 #include "typeOfItems.h"
 
-int countTotalItems(const int *itemList);
+int countTotalItems(const int *itemList); // equivalent to const int itemList[]
 
 int main()
 {
     int playerItems[MAX_ITEMS] = {2, 5, 10};
     
-    std::cout << "Player carries " << countTotalItems(playerItems) << " items in total (of MAX_ITEMS = " <<MAX_ITEMS << " different kinds)." << '\n';
+    std::cout << "Player carries " << countTotalItems(playerItems) << " items in total (of MAX_ITEMS = " << MAX_ITEMS << " different kinds)." << '\n';
 
     return 0;
 }

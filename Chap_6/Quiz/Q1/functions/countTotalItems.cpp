@@ -1,6 +1,6 @@
 #include "typeOfItems.h"
 
-int countTotalItems(const int *itemList){
+int countTotalItems(const int *itemList){  // equivalent to const int itemList[]
     
     int totalItems = 0;
     

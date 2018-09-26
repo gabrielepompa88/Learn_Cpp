@@ -1,4 +1,4 @@
-// g++ -Wall -Wextra -Wpedantic -std=c++11 -I ./headers -o Q7 Q7_main.cpp ./functions/printCard.cpp ./functions/printDeck.cpp ./functions/swapCards.cpp ./functions/shuffleDeck.cpp ./functions/getCardValue.cpp ./functions/getPlayerChoice.cpp ./functions/playBlackJack.cpp
+// g++ -Wall -Wextra -Wpedantic -std=c++11 -I ./headers -o Q7 Q7_main.cpp ./functions/printCard.cpp ./functions/printDeck.cpp ./functions/swapCards.cpp ./functions/shuffleDeck.cpp ./functions/getCardValue.cpp ./functions/getPlayerChoice.cpp ./functions/playBlackJackWithTie.cpp
 
 #include <iostream>
 #include <array>
@@ -6,13 +6,11 @@
 #include "CardRank.h"
 #include "CardSuit.h"
 #include "Card.h"
+#include "BlackjackResult.h"
 
-//void printCard(const Card &card);
 void printDeck(const std::array<Card,52> &deck);
-//void swapCards(Card &card1, Card &card2);
 void shuffleDeck(std::array<Card,52> &deck);
-//int getCardValue(const Card &card);
-bool playBlackJack(const std::array<Card, 52> &deck);
+BlackjackResult playBlackJackWithTie(const std::array<Card, 52> &deck);
 
 int main()
 {
@@ -40,11 +38,24 @@ int main()
     printDeck(deck);
     
     // simulate a Black-Jack game
+    /*
     if (playBlackJack(deck))
         std::cout << "You win!\n";
     else
         std::cout << "You lose!\n";
-
+    */
+    switch(playBlackJackWithTie(deck))
+    {
+        case BLACKJACK_PLAYER_WIN:
+            std::cout << "You win!\n";
+            break;
+        case BLACKJACK_DEALER_WIN:
+            std::cout << "You lose!\n";
+            break;
+        case BLACKJACK_TIE:
+            std::cout << "It's a tie...\n";
+            break;
+    }
     
     return 0;
 }

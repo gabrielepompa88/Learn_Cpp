@@ -13,7 +13,7 @@ void printDeck(const std::array<Card,52> &deck)
         
         printCard(card);
         
-        if(!(printedCards % 5)){std::cout << "\n";}
+        if(!(printedCards % 13)){std::cout << "\n";}
         else{std::cout << "\t";}
         
         printedCards++;

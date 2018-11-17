@@ -53,6 +53,7 @@ int main(){
         std::cout << "Exception catched: " << exception.what() << "\n";
     }
     
+    std::cout << "...control returned after catch block..." << std::endl;
     
     return 0;
 }
